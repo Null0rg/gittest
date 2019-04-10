@@ -18,11 +18,15 @@ repositories {
     // Use jcenter for resolving your dependencies.
     // You can declare any Maven/Ivy/file repository here.
     jcenter()
+
+    maven {
+        url 'https://dl.bintray.com/miho/Ext'
+    }
 }
 
 dependencies {
     // This dependency is found on compile classpath of this component and consumers.
-    implementation 'com.google.guava:guava:27.0.1-jre'
+    implementation 'eu.mihosoft.ext.apted:apted:0.1'
 
     // Use JUnit test framework
     testImplementation 'junit:junit:4.12'
